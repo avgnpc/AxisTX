@@ -22,3 +22,8 @@
 #define CHANNEL_MIN    0
 #define CHANNEL_MID    500
 #define CHANNEL_MAX    1000
+
+#define GIMBAL_RAW_MIN  0
+#define GIMBAL_RAW_MID  512
+#define GIMBAL_RAW_MAX  1023
+#define GIMBAL_DEADZONE 10

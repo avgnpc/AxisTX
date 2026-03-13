@@ -11,6 +11,13 @@
     #define PIN_JS_RIGHT_Y  A3
 #endif
 
+#ifdef BOARD_PROMICRO
+    #define PIN_BTN_UP    2
+    #define PIN_BTN_DOWN  3
+    #define PIN_BTN_ENTER 4
+    #define PIN_BTN_BACK  5
+#endif
+
 #ifdef HAS_OLED
     #define OLED_WIDTH     128
     #define OLED_HEIGHT    64
@@ -19,11 +26,11 @@
 #endif
 
 #define CHANNEL_COUNT  4
-#define CHANNEL_MIN    0
-#define CHANNEL_MID    500
-#define CHANNEL_MAX    1000
+#define CHANNEL_MIN    1000
+#define CHANNEL_MID    1500
+#define CHANNEL_MAX    2000
 
 #define GIMBAL_RAW_MIN  0
 #define GIMBAL_RAW_MID  512
 #define GIMBAL_RAW_MAX  1023
-#define GIMBAL_DEADZONE 10
+#define GIMBAL_DEADZONE 4

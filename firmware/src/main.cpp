@@ -34,7 +34,7 @@ void setup() {
 }
 
 void loop() {
-        leftStick.read();
+    leftStick.read();
     rightStick.read();
  
     Serial.print("L:");
